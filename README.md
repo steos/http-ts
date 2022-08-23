@@ -12,7 +12,22 @@ The code is published under the terms of the BSD (3-Clause) license.
 
 ### Running the Code
 
-There is no example app you can run, but you can find a few basic example tests in `Http.test.ts`.
+There is a short end-to-end example in `src/example.ts`. You can run it with `yarn start`.
+
+Example requests:
+
+```sh
+curl localhost:8888/foo -s
+# {"foo":"lorem ipsum"}
+
+curl localhost:8888/hello/world -s
+# {"name":"world"}
+
+curl localhost:8888/hello/world -s -X POST -d '{"greeting":"hi there"}'
+# {"message":"hi there, world"}
+```
+
+There are a few basic example tests in `Http.test.ts`.
 You can run them with:
 
 ```

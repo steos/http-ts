@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "ts-node-dev src/example.ts",
     "build": "tsc",
     "test": "jest"
   },
